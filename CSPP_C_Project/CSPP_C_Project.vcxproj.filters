@@ -15,7 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source.c">
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_operations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="line_operations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="general_operations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
