@@ -129,7 +129,6 @@
   <ItemGroup>
     <ClCompile Include="file_operations.c" />
     <ClCompile Include="general_operations.c" />
-    <ClCompile Include="global.c" />
     <ClCompile Include="line_operations.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>

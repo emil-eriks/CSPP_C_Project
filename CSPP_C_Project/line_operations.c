@@ -1,1 +1,1 @@
-#include "global.c"
+#include "global.h"

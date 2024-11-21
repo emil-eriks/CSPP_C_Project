@@ -1,6 +1,6 @@
-#include "global.c"
+#include "global.h"
 
-FILE* createFile(char fileName)
+FILE* createFile(const char* fileName)
 {
 	printf("test");
 	return NULL;

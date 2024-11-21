@@ -1,9 +1,9 @@
 
 
-#include "global.c"
-#include "file_operations.c"
-#include "line_operations.c"
-#include "general_operations.c"
+#include "global.h"
+#include "file_operations.h"
+#include "line_operations.h"
+#include "general_operations.h"
 
 int main()
 {
