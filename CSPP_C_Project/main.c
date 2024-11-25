@@ -8,6 +8,8 @@
 int main()
 {
     printf("Hello, World!\n");
-    createFile("Test");
+    createFile(filePath);
+    //copyFile(filePath, "C:\\Users\\emild\\Desktop\\test\\test2.txt");
+    //deleteFile(filePath);
     return 0;
 }
