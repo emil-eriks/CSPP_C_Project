@@ -2,3 +2,4 @@
 
 
 extern  FILE* filePtr;
+extern const char* filePath;
