@@ -8,9 +8,10 @@
 int main()
 {
     printf("Hello, World!\n");
-    createFile(filePath);
-    copyFile(filePath, "C:\\Users\\Emil\\Desktop\\outputCSPP\\test2.txt");
+    //createFile(filePath);
+    //copyFile(filePath, "C:\\Users\\Emil\\Desktop\\outputCSPP\\test2.txt");
     //deleteFile(filePath);
-    showFile(filePath);
+    //showFile(filePath);
+    appendLine(filePath, "hello how are you");
     return 0;
 }
