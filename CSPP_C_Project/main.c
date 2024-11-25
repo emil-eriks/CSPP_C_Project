@@ -9,7 +9,8 @@ int main()
 {
     printf("Hello, World!\n");
     createFile(filePath);
-    //copyFile(filePath, "C:\\Users\\emild\\Desktop\\test\\test2.txt");
+    copyFile(filePath, "C:\\Users\\Emil\\Desktop\\outputCSPP\\test2.txt");
     //deleteFile(filePath);
+    showFile(filePath);
     return 0;
 }

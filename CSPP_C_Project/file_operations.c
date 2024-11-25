@@ -2,7 +2,7 @@
 #include "global.h"
 
 // used documentation: https://www.w3schools.com/c/c_files.php (for creating file), https://www.geeksforgeeks.org/c-program-copy-contents-one-file-another-file/ (for copying file)
-// https://www.geeksforgeeks.org/c-program-delete-file/ for delete function
+// https://www.geeksforgeeks.org/c-program-delete-file/ for delete function, https://www.geeksforgeeks.org/c-program-to-read-contents-of-whole-file/ showFile function
 
 
 FILE* openFile(const char* fileName) // same as create file just doesnt create it if it doesnt exists
@@ -82,5 +82,14 @@ void deleteFile(const char* fileName)
         printf("Deleted successfully");
     else
         printf("Unable to delete the file");
+}
+
+void showFile(const char* fileName)
+{
+    char ch;
+    FILE* filePtr = openFile(fileName);
+    while ((ch = fgetc(filePtr)) != EOF) {
+        printf("%c", ch);
+    }
 }
 
