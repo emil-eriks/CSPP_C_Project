@@ -12,6 +12,11 @@ int main()
     //copyFile(filePath, "C:\\Users\\Emil\\Desktop\\outputCSPP\\test2.txt");
     //deleteFile(filePath);
     //showFile(filePath);
-    appendLine(filePath, "hello how are you");
+    //appendLine(filePath, "hello how are you");
+    //deleteLine(filePath, 3);
+    //insertLine(filePath, 3, "hello this is a test");
+    //showLine(filePath, 3);
+    countLines(filePath);
+
     return 0;
 }
