@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "global.h"
 #include "line_operations.h"
 #include "file_operations.h"
@@ -12,9 +13,10 @@ void appendLine(const char* fileName, const char* text)
 	if (filePtr == NULL)
 	{
 		printf("File doesn't exist.\n");
-		return NULL;
+		return;
 	}
 	fputs(text, filePtr);
+    fputc('\n', filePtr);
 	fclose(filePtr);
 }
 
@@ -42,6 +44,11 @@ void deleteLine(const char* fileName, int lineToDelete) {
 
     remove(fileName);
     rename("temp.txt", fileName);
+
+    char message[256];
+    int nLines = countLines(fileName);
+    sprintf(message, "Deleted a line from %s successfully, it now has %d lines.", fileName, nLines);
+    appendLine("changelog.txt", message);
 }
 
 void insertLine(const char* fileName, int lineToInsert, const char* insertText) {
@@ -70,6 +77,11 @@ void insertLine(const char* fileName, int lineToInsert, const char* insertText) 
 
     remove(fileName);
     rename("temp.txt", fileName);
+
+    char message[256];
+    int nLines = countLines(fileName);
+    sprintf(message, "Inserted a line into %s successfully, it now has %d lines.", fileName, nLines);
+    appendLine("changelog.txt", message);
 }
 
 void showLine(const char* fileName, int lineToShow) {
@@ -87,5 +99,10 @@ void showLine(const char* fileName, int lineToShow) {
     if (currentLine < lineToShow) {
         printf("Line %d does not exist in the file.\n", lineToShow);
     }
+
+    char message[256];
+    int nLines = countLines(fileName);
+    sprintf(message, "Deleted a line from %s successfully, it had %d lines.", fileName, nLines);
+    appendLine("changelog.txt", message);
 }
 

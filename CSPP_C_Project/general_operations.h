@@ -1,3 +1,3 @@
 
 
-void countLines(const char* fileName);
+int countLines(const char* fileName);
